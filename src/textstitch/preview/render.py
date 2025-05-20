@@ -47,8 +47,15 @@ def draw_text(draw: ImageDraw.ImageDraw, obj, canvas_h_px):
     font_path = find_font_file(obj.font)
     font = ImageFont.truetype(str(font_path), size=int(pt_size))
 
-    # Measure text
-    text_w, text_h = draw.textsize(obj.text, font=font)
+    # ---------- measure text size (Pillow 10 compatible) ----------
+    try:
+        # Pillow 10+
+        bbox = draw.textbbox((0, 0), obj.text, font=font)
+        text_w, text_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    except AttributeError:
+        # Pillow <10 fallback
+        text_w, text_h = draw.textsize(obj.text, font=font)
+
 
     # Compute anchor offsets
     if obj.anchor == "centre":
