@@ -1,0 +1,16 @@
+# Byte-code / caches
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+
+# Virtual envs
+.venv/
+env/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

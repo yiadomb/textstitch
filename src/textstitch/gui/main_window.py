@@ -1,0 +1,1 @@
+# Placeholder for src/textstitch/gui/main_window.py

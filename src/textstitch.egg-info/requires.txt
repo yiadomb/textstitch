@@ -1,0 +1,7 @@
+freetype-py>=2.5
+numpy>=1.26
+shapely>=2.0
+svgpathtools>=1.6
+pyembroidery>=1.5
+Pillow>=10.0
+click>=8.1

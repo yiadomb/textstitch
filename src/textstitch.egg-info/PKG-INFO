@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: textstitch
+Version: 0.1.0
+Summary: Embroidery lettering engine for Kente sashes
+Author: Nsadua
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: freetype-py>=2.5
+Requires-Dist: numpy>=1.26
+Requires-Dist: shapely>=2.0
+Requires-Dist: svgpathtools>=1.6
+Requires-Dist: pyembroidery>=1.5
+Requires-Dist: Pillow>=10.0
+Requires-Dist: click>=8.1
+
+# Nsadua Textstitch
+
+Phase 1 goal: **CLI tool** that converts a layout JSON into  
+* `output.dst` — Tajima-compatible stitches  
+* `preview.png` — 130 mm × 250 mm proof image  
+
+## Quick start
+
+```bash
+python -m venv .venv      # one-time
+source .venv/bin/activate # Windows: .venv\Scripts\activate
+pip install -e .
+textstitch --help

@@ -1,0 +1,1 @@
+# Placeholder for src/textstitch/engine/glyph.py

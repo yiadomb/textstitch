@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textstitch"
+version = "0.1.0"
+description = "Embroidery lettering engine for Kente sashes"
+authors = [{ name = "Nsadua" }]
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "freetype-py>=2.5",
+    "numpy>=1.26",
+    "shapely>=2.0",
+    "svgpathtools>=1.6",
+    "pyembroidery>=1.5",
+    "Pillow>=10.0",
+    "click>=8.1"
+]
+
+[project.scripts]
+textstitch = "textstitch.cli:app"

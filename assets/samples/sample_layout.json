@@ -1,0 +1,14 @@
+{
+  "canvas": { "width_mm": 130, "height_mm": 250 },
+  "objects": [
+    {
+      "type": "text",
+      "text": "EMMANUEL",
+      "font": "Arial Bold",
+      "font_size_mm": 25,
+      "x_mm": 65,
+      "y_mm": 160,
+      "anchor": "centre"
+    }
+  ]
+}
